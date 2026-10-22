@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Andrei Janzen C. Barrinuevo, BSIT graduate and System Support Associate with experience in IT support, payroll system support, attendance monitoring, and web development.">
+  <title>Andrei Janzen C. Barrinuevo | IT Professional Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Andrei<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Open navigation" aria-expanded="false"
+              aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link contact-link">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Cover -->
+    <section class="hero" id="home">
+      <!-- Curved light shape, top-left -->
+      <svg class="hero-swoosh" viewBox="0 0 560 190" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="swooshFill" x1="0" y1="0" x2="1" y2="0.7">
+            <stop offset="0" stop-color="#2a6db5" stop-opacity="0.25"/>
+            <stop offset="0.35" stop-color="#2f78c4"/>
+            <stop offset="0.78" stop-color="#d6e6f8"/>
+            <stop offset="1" stop-color="#7ea6d3"/>
+          </linearGradient>
+        </defs>
+        <path d="M0 0H500C470 60 380 110 270 92C170 76 90 36 0 66Z" fill="url(#swooshFill)"/>
+      </svg>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-title">
+            <div class="hero-title-frame">
+              <p class="hero-kicker">Welcome to my</p>
+              <h1>Portfolio</h1>
+            </div>
+          </div>
+
+          <h2 class="hero-name">Andrei Janzen C. Barrinuevo</h2>
+          <span class="hero-rule"></span>
+          <p class="hero-role">System Support Associate<br>IT Support &nbsp;-&nbsp; Web Systems</p>
+
+          <ul class="hero-contact">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <a href="tel:+639241237162">0924 123 7162</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Philippines · Open to relocate to Dubai, UAE</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <a href="mailto:janzenandrei2@gmail.com">janzenandrei2@gmail.com</a>
+            </li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <!-- Ilagay ang BARRINUEVO_A_RESUME.pdf sa iisang folder kasama ng index.html -->
+            <a href="BARRINUEVO%20A_RESUME.pdf" class="btn btn-secondary" download="BARRINUEVO_A_RESUME.pdf">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <!-- Litrato: profile.png (cutout mula sa resume). Para gumamit ng ibang litrato,
+               palitan lang ang file na iyon. Silhouette ang lalabas kapag walang litrato. -->
+          <div class="photo-frame">
+            <svg class="photo-placeholder" viewBox="0 0 400 480" aria-hidden="true">
+              <circle cx="200" cy="170" r="70"/>
+              <path d="M40 480C40 360 110 300 200 300S360 360 360 480Z"/>
+            </svg>
+            <img src="profile.png" alt="Portrait of Andrei Janzen C. Barrinuevo" width="754" height="754"
+                 onload="this.parentNode.classList.add('has-photo')" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / About Me</p>
+          <h2>A little about who I am</h2>
+          <p>BSIT graduate with hands-on experience in system support and IT operations.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <h3>Supporting systems.<br>Building tools that help.</h3>
+            <p>
+              I'm a BSIT graduate of De La Salle Lipa, now working as a System
+              Support Associate. My day-to-day covers payroll system support,
+              ZKTeco biometric attendance monitoring, CCTV verification of
+              time records, and manual system testing.
+            </p>
+            <p>
+              I also develop and maintain internal web-based systems and assist
+              the IT Engineer with daily technical tasks. I'm based in the
+              Philippines and willing to relocate to Dubai, UAE immediately
+              upon hiring.
+            </p>
+            <a href="#contact" class="text-link">Let's work together <span>→</span></a>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="card-index">01</span>
+              <h3>System Support</h3>
+              <p>Payroll system support, troubleshooting, and end-user assistance.</p>
+            </div>
+            <div class="stat-card">
+              <span class="card-index">02</span>
+              <h3>Attendance &amp; Biometrics</h3>
+              <p>ZKTeco device monitoring, time records, and CCTV verification.</p>
+            </div>
+            <div class="stat-card">
+              <span class="card-index">03</span>
+              <h3>Web Development</h3>
+              <p>Building and maintaining internal web-based systems.</p>
+            </div>
+            <div class="stat-card">
+              <span class="card-index">04</span>
+              <h3>Networking</h3>
+              <p>LAN/WAN, TCP/IP, and cabling, with CCNA coursework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Technical Skills</p>
+          <h2>Tools I work with</h2>
+          <p>Skills from my IT support work, coursework, and development projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="card-index">01</span>
+            <h3>IT Support</h3>
+            <ul class="point-list">
+              <li>Windows 10/11 Administration</li>
+              <li>Hardware &amp; Software Installation</li>
+              <li>Configuration &amp; PC Setup</li>
+              <li>Desktop &amp; Laptop Troubleshooting</li>
+              <li>End-User Technical Support</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <span class="card-index">02</span>
+            <h3>Networking</h3>
+            <ul class="point-list">
+              <li>LAN/WAN</li>
+              <li>TCP/IP</li>
+              <li>Network Cabling</li>
+              <li>Basic Router &amp; Switch Configuration</li>
+              <li>Basic Network Troubleshooting</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <span class="card-index">03</span>
+            <h3>Database &amp; Reporting</h3>
+            <ul class="point-list">
+              <li>Microsoft Excel</li>
+              <li>Microsoft Word</li>
+              <li>Power BI (Basic)</li>
+              <li>Smartbooks</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <span class="card-index">04</span>
+            <h3>Programming</h3>
+            <ul class="point-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / Selected Projects</p>
+          <h2>Things I've built</h2>
+          <p>Web and mobile systems I've developed to support day-to-day operations.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Para maglagay ng screenshot: idagdag sa loob ng .project-visual ang
+               <img src="images/project-1.png" alt="Screenshot ng project"> -->
+          <article class="project-card reveal">
+            <div class="project-visual"><span class="project-number">01</span></div>
+            <div class="project-info">
+              <div class="project-category">Web Application</div>
+              <h3>Attendance Monitoring System</h3>
+              <p>A web-based system for recording and monitoring employee attendance, with login, user management, and attendance records.</p>
+              <div class="tag-list"><span>PHP</span><span>SQL</span><span>HTML/CSS</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual"><span class="project-number">02</span></div>
+            <div class="project-info">
+              <div class="project-category">Mobile App</div>
+              <h3>Overtime Filing &amp; Approval App</h3>
+              <p>A Flutter app for filing and approving overtime requests, with separate accounts for each department.</p>
+              <div class="tag-list"><span>Flutter</span><span>Dart</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual"><span class="project-number">03</span></div>
+            <div class="project-info">
+              <div class="project-category">Web Module</div>
+              <h3>Travel Allowance Management</h3>
+              <p>A module that computes travel allowance from attendance logs, with GA and Admin roles and Excel export.</p>
+              <div class="tag-list"><span>PHP</span><span>SQL</span><span>Excel</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / Experience &amp; Education</p>
+          <h2>My professional journey</h2>
+          <p>Work experience, internship, education, and trainings.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">JULY 2026 – PRESENT</div>
+            <div class="timeline-content">
+              <h3>System Support Associate</h3>
+              <p class="timeline-company">Hyundai Engineering &amp; Construction – Dong-Ah Joint Venture</p>
+              <ul class="point-list">
+                <li>Maintain and support the payroll system.</li>
+                <li>Maintain and monitor ZKTeco biometric devices.</li>
+                <li>Monitor employee attendance and time records.</li>
+                <li>Review CCTV for missing Time In/Time Out records.</li>
+                <li>Perform manual system testing and report system issues.</li>
+                <li>Develop and maintain company web-based systems.</li>
+                <li>Assist the IT Engineer with daily IT and system-related tasks.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">JAN – APR 2026</div>
+            <div class="timeline-content">
+              <h3>IT Intern</h3>
+              <p class="timeline-company">City Government of Santa Rosa – City Information Technology Office</p>
+              <ul class="point-list">
+                <li>Provided hardware, software, printer, and network support.</li>
+                <li>Installed and configured Windows PCs, software, and updates.</li>
+                <li>Performed PC setup and basic troubleshooting.</li>
+                <li>Assisted with network cabling and peripherals.</li>
+                <li>Supported end users with technical concerns.</li>
+                <li>Developed and maintained internal web-based systems.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2022 – 2026</div>
+            <div class="timeline-content">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="timeline-company">De La Salle Lipa</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2020 – 2022</div>
+            <div class="timeline-content">
+              <h3>Senior High School – Accountancy Business Management (ABM)</h3>
+              <p class="timeline-company">Holy Rosary College</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="cert-block reveal">
+          <h3 class="cert-title">Certifications &amp; Trainings</h3>
+          <ul class="cert-list">
+            <li><span>CCNA: Introduction to Networks</span><time>Aug 2024</time></li>
+            <li><span>CCNA: Switching, Routing, and Wireless Essentials</span><time>Jan 2025</time></li>
+            <li><span>Smartbooks and Power BI</span><time>Dec 2024</time></li>
+            <li><span>Microservice 101 and Decoding Software Development</span><time>May 2025</time></li>
+            <li><span>DLSL Campus Technology Talk Featuring Gen AI</span><time>May 2025</time></li>
+            <li><span>Cybertalks: Digital Bayanihan</span><time>May 2025</time></li>
+            <li><span>Let's GIT IT 2025</span><time>Feb 2025</time></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-content">
+            <p class="eyebrow">05 / Get In Touch</p>
+            <h2>Let's work together</h2>
+            <p>I'm open to IT support and system roles. I'm currently based in the Philippines and willing to relocate to Dubai, UAE immediately upon hiring.</p>
+            <a class="btn btn-primary" href="mailto:janzenandrei2@gmail.com">Send Me an Email</a>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </span>
+              <div><small>EMAIL</small><a href="mailto:janzenandrei2@gmail.com">janzenandrei2@gmail.com</a></div>
+            </div>
+            <div class="contact-detail">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              </span>
+              <div><small>PHONE · PHILIPPINES</small><a href="tel:+639241237162">0924 123 7162</a></div>
+            </div>
+            <div class="contact-detail">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              </span>
+              <div><small>PHONE · UAE</small><a href="tel:+971502509987">+971 50 250 9987</a></div>
+            </div>
+            <div class="contact-detail">
+              <span class="detail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div><small>LOCATION</small><span class="detail-text">Philippines · Open to Dubai, UAE</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Andrei<span>.</span></a>
+      <p>Designed &amp; built with HTML, CSS, and JavaScript.</p>
+      <p>© <span id="currentYear"></span> Andrei Janzen C. Barrinuevo. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
